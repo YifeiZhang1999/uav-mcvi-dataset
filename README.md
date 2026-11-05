@@ -65,39 +65,10 @@ UAV-MCVI/
 
 ```
 
-The scripts directory is optional and will contain utility scripts as they become available.
-
 ## Data Format and Access
 
-The raw sensor measurements are provided as ROS 2 bags and hosted on Zenodo. The bag files are organized by environment and sequence.
-
-- **Zenodo dataset:** [Zenodo DOI / Dataset URL]
-
-This GitHub repository provides sensor calibration files, topic descriptions, sequence information, and utility scripts.
-
-The ROS 2 bag files can be inspected and played using the standard ROS 2 bag tools. Please refer to the documentation for sensor topics and calibration details.
-
-## Citation
-
-If you use this dataset in your research, please cite the dataset using its Zenodo DOI:
-
-```bibtex
-@dataset{uav_mcvi_dataset,
-  author    = {Author Names},
-  title     = {UAV-MCVI: A Multi-Camera Visual-Inertial Dataset for UAV Close-Proximity Inspection},
-  year      = {2026},
-  publisher = {Zenodo},
-  doi       = {YOUR_ZENODO_DOI},
-  url       = {https://doi.org/YOUR_ZENODO_DOI}
-}
-```
-
-Please replace the placeholder fields with the actual metadata provided by Zenodo.
+The raw sensor measurements are provided as ROS 2 bags. The bag files are organized by environment and sequence.
 
 ## License
 
 The dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
-
-## Acknowledgments
-
-We thank the relevant facilities and personnel who supported the data collection experiments.
