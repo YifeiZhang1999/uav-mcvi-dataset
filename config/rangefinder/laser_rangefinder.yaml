@@ -1,0 +1,18 @@
+%YAML:1.0
+---
+sensor: laser_rangefinder
+
+body_frame: body
+
+# Sensor origin expressed in the body frame (m)
+translation_body:
+  x: 0.11
+  y: 0.00
+  z: 0.06
+
+# Unit vector of the laser beam expressed in the body frame
+beam_direction_body: [0.0, 0.0, -1.0]
+
+measurement:
+  type: range
+  unit: meter

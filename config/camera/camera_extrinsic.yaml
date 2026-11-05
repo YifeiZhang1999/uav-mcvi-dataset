@@ -1,0 +1,57 @@
+%YAML:1.0
+---
+# Camera extrinsic parameters with respect to the IMU/body frame.
+#
+# Body coordinate convention:
+#   x: forward
+#   y: left
+#   z: upward
+#
+# Camera optical coordinate convention:
+#   x: right
+#   y: downward
+#   z: forward
+#
+# Transform convention:
+#   p_body = T_body_camera * p_camera
+#
+# Translation unit: meter
+
+body_frame: body
+camera_frame_convention: optical
+
+cameras:
+
+  # Front-view stereo pair
+  front_cam0:
+    calibration_status: provided
+    T_body_camera:
+      - [0.0,  0.0,  1.0,  0.136]
+      - [-1.0, 0.0,  0.0,  0.0475]
+      - [0.0, -1.0,  0.0, -0.020]
+      - [0.0,  0.0,  0.0,  1.0]
+
+  front_cam1:
+    calibration_status: provided
+    T_body_camera:
+      - [0.0,  0.0,  1.0,  0.136]
+      - [-1.0, 0.0,  0.0, -0.0475]
+      - [0.0, -1.0,  0.0, -0.020]
+      - [0.0,  0.0,  0.0,  1.0]
+
+  # Rear-view stereo pair
+  rear_cam0:
+    calibration_status: provided
+    T_body_camera:
+      - [0.0,  0.0, -1.0, -0.136]
+      - [1.0,  0.0,  0.0, -0.0475]
+      - [0.0, -1.0,  0.0,  0.000]
+      - [0.0,  0.0,  0.0,  1.0]
+
+  rear_cam1:
+    calibration_status: provided
+    T_body_camera:
+      - [0.0,  0.0, -1.0, -0.136]
+      - [1.0,  0.0,  0.0,  0.0475]
+      - [0.0, -1.0,  0.0,  0.000]
+      - [0.0,  0.0,  0.0,  1.0]

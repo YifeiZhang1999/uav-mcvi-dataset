@@ -1,0 +1,20 @@
+%YAML:1.0
+---
+# IMU configuration
+# Body coordinate convention:
+# x: forward, y: left, z: upward
+
+imu:
+  model: "onboard_imu"
+  coordinate_frame: "body"
+  coordinate_convention: "forward-left-up"
+
+  # Gravity magnitude (m/s^2)
+  g_norm: 9.805
+
+  # VINS-Fusion IMU noise parameters
+  # These are the estimator configuration values used in the experiments.
+  acc_n: 0.1
+  gyr_n: 0.1
+  acc_w: 0.0001
+  gyr_w: 0.0001

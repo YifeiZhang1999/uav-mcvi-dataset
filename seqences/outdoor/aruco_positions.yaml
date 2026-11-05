@@ -1,0 +1,11 @@
+%YAML:1.0
+---
+reference_type: aruco_markers
+coordinate_frame: world
+position_unit: meter
+
+markers:
+    position_1: [1.50, 0.36, 1.15]
+    position_2: [1.48, 7.42, 1.20]
+    position_3: [1.42, 18.63, 1.35]
+    position_4: [1.39, 28.47, 1.35]

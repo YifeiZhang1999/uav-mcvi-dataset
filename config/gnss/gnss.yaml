@@ -1,0 +1,17 @@
+
+%YAML:1.0
+---
+# GNSS configuration
+
+sensor: gnss
+
+availability: optional
+
+measurement:
+  type: position
+  coordinate_frame: WGS84
+  position_unit: degree_meter
+
+extrinsics:
+  reference_frame: body
+  translation_body: [-0.070, 0.000, 0.032]  # [x, y, z], meter

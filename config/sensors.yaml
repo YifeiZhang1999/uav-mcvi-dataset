@@ -1,0 +1,84 @@
+# Dataset sensor configuration
+%YAML:1.0
+---
+dataset:
+  name: UAV-MCVI
+  description: Multi-camera visual-inertial UAV dataset for close-proximity inspection
+
+# Body coordinate convention:
+# x: forward
+# y: left
+# z: upward
+
+coordinate_frames:
+  body: body
+  camera: optical
+  translation_unit: meter
+  angle_unit: radian
+
+# Camera configuration
+cameras:
+
+  front_cam0:
+    group: front_stereo
+    topic: "/camera/camera/infra1/image_rect_raw"
+    modality: infrared
+    image_width: 640
+    image_height: 480
+    rectified: true
+    intrinsic_file: "cameras/camera_intrinsics.yaml"
+    extrinsic_file: "cameras/camera_extrinsics.yaml"
+
+  front_cam1:
+    group: front_stereo
+    topic: "/camera/camera/infra2/image_rect_raw"
+    modality: infrared
+    image_width: 640
+    image_height: 480
+    rectified: true
+    intrinsic_file: "cameras/camera_intrinsics.yaml"
+    extrinsic_file: "cameras/camera_extrinsics.yaml"
+
+  rear_cam0:
+    group: rear_stereo
+    topic: "/camera1/infra1/image_rect_raw"
+    modality: infrared
+    image_width: 640
+    image_height: 480
+    rectified: true
+    intrinsic_file: "cameras/camera_intrinsics.yaml"
+    extrinsic_file: "cameras/camera_extrinsics.yaml"
+
+  rear_cam1:
+    group: rear_stereo
+    topic: "/camera1/infra2/image_rect_raw"
+    modality: infrared
+    image_width: 640
+    image_height: 480
+    rectified: true
+    intrinsic_file: "cameras/camera_intrinsics.yaml"
+    extrinsic_file: "cameras/camera_extrinsics.yaml"
+
+# IMU configuration
+imu:
+  topic: "/mavros/imu/data_raw"
+  frame: body
+  configuration_file: "imu/imu.yaml"
+
+# Auxiliary sensors
+laser_rangefinder:
+  availability: sequence_dependent
+  topic: /mavros/px4flow/ground_distance
+  configuration_file: "rangefinder/laser_rangefinder.yaml"
+
+gnss:
+  availability: sequence_dependent
+  topic: "/mavros/global_position/global"
+  configuration_file: "gnss/gnss.yaml"
+
+# Ground-truth measurements
+ground_truth:
+  vicon:
+    availability: indoor_sequences
+    topic: /mavros/vision_pose/pose
+    configuration_file: "ground_truth/vicon.yaml"

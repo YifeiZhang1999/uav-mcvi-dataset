@@ -1,0 +1,23 @@
+%YAML:1.0
+---
+camera_model: PINHOLE
+image_width: 640
+image_height: 480
+
+applies_to:
+  - front_cam0
+  - front_cam1
+  - rear_cam0
+  - rear_cam1
+
+distortion_parameters:
+  k1: 0.0
+  k2: 0.0
+  p1: 0.0
+  p2: 0.0
+
+projection_parameters:
+  fx: 383.692
+  fy: 383.692
+  cx: 320.000
+  cy: 240.000

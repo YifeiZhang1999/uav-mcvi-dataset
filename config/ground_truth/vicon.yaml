@@ -1,0 +1,18 @@
+%YAML:1.0
+---
+ground_truth_source: VICON
+
+body_frame: body
+ground_truth_body_frame: vicon_body
+
+# VICON body reference frame coincides with the IMU/body frame
+T_body_vicon:
+  - [1.0, 0.0, 0.0, 0.0]
+  - [0.0, 1.0, 0.0, 0.0]
+  - [0.0, 0.0, 1.0, 0.0]
+  - [0.0, 0.0, 0.0, 1.0]
+
+coordinate_convention:
+  x: forward
+  y: left
+  z: upward

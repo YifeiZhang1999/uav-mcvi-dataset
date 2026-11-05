@@ -1,0 +1,7 @@
+%YAML:1.0
+---
+sequences:
+  - id: outdoor_01
+    environment: outdoor
+    description: UAV close-proximity flight around a building facade
+    bag: outdoor/outdoor_01
