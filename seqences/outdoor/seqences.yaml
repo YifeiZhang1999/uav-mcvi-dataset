@@ -1,12 +1,27 @@
 %YAML:1.0
 ---
 sequences:
-  - id: outdoor_01
+  - id: outdoor_test_0
     environment: outdoor
-    description: UAV close-proximity flight around a building facade
-    bag: outdoor/outdoor_01
+    description: UAV close-proximity flight for outdoor facade inspection
+    
+  - id: outdoor_test_1
+    environment: outdoor
+    description: UAV close-proximity flight for outdoor facade inspection
+    
+  - id: outdoor_test_2
+    environment: outdoor
+    description: UAV close-proximity flight for outdoor facade inspection  
+
+  - id: outdoor_test_3
+    environment: outdoor
+    description: UAV close-proximity flight for outdoor facade inspection  
+
+  - id: outdoor_test_4
+    environment: outdoor
+    description: UAV close-proximity flight for outdoor facade inspection
 
     evaluation:
       reference_type: aruco_markers
       marker_count: 4
-      marker_positions_file: outdoor_01/aruco_positions.yaml
+      marker_positions_file: ./aruco_positions.yaml
