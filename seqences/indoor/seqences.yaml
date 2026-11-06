@@ -1,7 +1,34 @@
 %YAML:1.0
 ---
 sequences:
-  - id: outdoor_01
-    environment: outdoor
-    description: UAV close-proximity flight around a building facade
-    bag: outdoor/outdoor_01
+  - id: indoor_test_0
+    environment: indoor
+    description: UAV close-proximity flight in an indoor environment
+    
+  - id: indoor_test_1
+    environment: indoor
+    description: UAV close-proximity flight in an indoor environment
+    
+  - id: indoor_test_2
+    environment: indoor
+    description: UAV close-proximity flight in an indoor environment    
+
+  - id: indoor_test_3
+    environment: indoor
+    description: UAV close-proximity flight in an indoor environment    
+
+  - id: indoor_test_4
+    environment: indoor
+    description: UAV close-proximity flight in an indoor environment 
+
+  - id: indoor_test_5
+    environment: indoor
+    description: UAV close-proximity flight in an indoor environment 
+    
+  - id: indoor_test_6
+    environment: indoor
+    description: UAV close-proximity flight in an indoor environment 
+
+  - id: indoor_test_7
+    environment: indoor
+    description: UAV close-proximity flight in an indoor environment 
