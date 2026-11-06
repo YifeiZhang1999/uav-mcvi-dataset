@@ -69,6 +69,16 @@ UAV-MCVI/
 
 The raw sensor measurements are provided as ROS 2 bags. The bag files are organized by environment and sequence.
 
+### Dataset Download
+
+The complete dataset, including indoor and outdoor recordings, is available at:
+
+- **[Download UAV-MCVI Dataset](https://drive.google.com/drive/folders/1S9JlLEAYyuNpzdwk8oRN5-4xzk5lV_Q9?usp=sharing)**
+
+The released dataset includes recordings from both autonomous and manually piloted UAV flights, covering a broader range of trajectories and experimental scenarios beyond those presented in the paper.
+
+Please refer to the corresponding `sequences.yaml` files for detailed sequence descriptions and data availability.
+
 ## License
 
 The dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
